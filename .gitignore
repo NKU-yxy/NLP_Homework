@@ -1,6 +1,19 @@
+# 实验目录仅追踪代码、结果和正式报告。
+/NLP Hw[0-9]*/*
+!/NLP Hw[0-9]*/src/
+!/NLP Hw[0-9]*/results/
+!/NLP Hw[0-9]*/reports/
+/NLP Hw[0-9]*/reports/**
+!/NLP Hw[0-9]*/reports/**/
+!/NLP Hw[0-9]*/reports/**/*.pdf
+!/NLP Hw[0-9]*/reports/**/*.PDF
+
+# 本地协作规范不进入版本控制。
+[aA][gG][eE][nN][tT][sS].[mM][dD]
+
 # 忽略本地环境、缓存和系统文件。
 .venv/
-__pycache__/
+*pycache*/
 *.py[cod]
 .DS_Store
 .pytest_cache/
