@@ -1,0 +1,262 @@
+{
+  "environment": "Python 3.12.14 / macOS-26.6-arm64-arm-64bit / NumPy 2.2.6 / SciPy 1.15.3 / scikit-learn 1.6.1",
+  "sample_count": 11519,
+  "data_sha256": "de12ebe7f41316b798896bf975da840e2998f82393328d375fe5456a14e9eb2d",
+  "classes": [
+    "business",
+    "politics",
+    "sports"
+  ],
+  "vocabulary_size": 61329,
+  "parameters": {
+    "C": 1.0,
+    "solver": "lbfgs",
+    "max_iter": 2000,
+    "tol": 0.0001,
+    "penalty": "l2",
+    "fit_intercept": true,
+    "class_weight": null,
+    "random_state": 42
+  },
+  "split_counts": {
+    "train": {
+      "business": 1157,
+      "sports": 6924,
+      "politics": 1134
+    },
+    "validation": {
+      "politics": 152,
+      "business": 124,
+      "sports": 876
+    },
+    "test": {
+      "sports": 839,
+      "business": 148,
+      "politics": 165
+    }
+  },
+  "methods": {
+    "Binary Bag of Words": {
+      "iterations": 19,
+      "validation": {
+        "accuracy": 0.9852430555555556,
+        "macro_f1": 0.9643154040220404,
+        "classification_report": {
+          "business": {
+            "precision": 0.943089430894309,
+            "recall": 0.9354838709677419,
+            "f1-score": 0.9392712550607287,
+            "support": 124.0
+          },
+          "politics": {
+            "precision": 0.9602649006622517,
+            "recall": 0.9539473684210527,
+            "f1-score": 0.9570957095709571,
+            "support": 152.0
+          },
+          "sports": {
+            "precision": 0.9954441913439636,
+            "recall": 0.997716894977169,
+            "f1-score": 0.9965792474344356,
+            "support": 876.0
+          },
+          "accuracy": 0.9852430555555556,
+          "macro avg": {
+            "precision": 0.9662661743001747,
+            "recall": 0.9623827114553212,
+            "f1-score": 0.9643154040220404,
+            "support": 1152.0
+          },
+          "weighted avg": {
+            "precision": 0.9851670711361707,
+            "recall": 0.9852430555555556,
+            "f1-score": 0.985201045342779,
+            "support": 1152.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            116,
+            6,
+            2
+          ],
+          [
+            5,
+            145,
+            2
+          ],
+          [
+            2,
+            0,
+            874
+          ]
+        ]
+      },
+      "test": {
+        "accuracy": 0.9869791666666666,
+        "macro_f1": 0.9713789000351287,
+        "classification_report": {
+          "business": {
+            "precision": 0.972027972027972,
+            "recall": 0.9391891891891891,
+            "f1-score": 0.9553264604810997,
+            "support": 148.0
+          },
+          "politics": {
+            "precision": 0.9470588235294117,
+            "recall": 0.9757575757575757,
+            "f1-score": 0.9611940298507463,
+            "support": 165.0
+          },
+          "sports": {
+            "precision": 0.9976162097735399,
+            "recall": 0.9976162097735399,
+            "f1-score": 0.9976162097735399,
+            "support": 839.0
+          },
+          "accuracy": 0.9869791666666666,
+          "macro avg": {
+            "precision": 0.9722343351103078,
+            "recall": 0.9708543249067683,
+            "f1-score": 0.9713789000351287,
+            "support": 1152.0
+          },
+          "weighted avg": {
+            "precision": 0.9870875397070249,
+            "recall": 0.9869791666666666,
+            "f1-score": 0.9869664332261944,
+            "support": 1152.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            139,
+            8,
+            1
+          ],
+          [
+            3,
+            161,
+            1
+          ],
+          [
+            1,
+            1,
+            837
+          ]
+        ]
+      }
+    },
+    "Word Frequency": {
+      "iterations": 132,
+      "validation": {
+        "accuracy": 0.9852430555555556,
+        "macro_f1": 0.965699331326622,
+        "classification_report": {
+          "business": {
+            "precision": 0.9365079365079365,
+            "recall": 0.9516129032258065,
+            "f1-score": 0.944,
+            "support": 124.0
+          },
+          "politics": {
+            "precision": 0.9602649006622517,
+            "recall": 0.9539473684210527,
+            "f1-score": 0.9570957095709571,
+            "support": 152.0
+          },
+          "sports": {
+            "precision": 0.9965714285714286,
+            "recall": 0.9954337899543378,
+            "f1-score": 0.9960022844089091,
+            "support": 876.0
+          },
+          "accuracy": 0.9852430555555556,
+          "macro avg": {
+            "precision": 0.9644480885805389,
+            "recall": 0.9669980205337323,
+            "f1-score": 0.965699331326622,
+            "support": 1152.0
+          },
+          "weighted avg": {
+            "precision": 0.9853158163682446,
+            "recall": 0.9852430555555556,
+            "f1-score": 0.9852713098932205,
+            "support": 1152.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            118,
+            5,
+            1
+          ],
+          [
+            5,
+            145,
+            2
+          ],
+          [
+            3,
+            1,
+            872
+          ]
+        ]
+      },
+      "test": {
+        "accuracy": 0.9887152777777778,
+        "macro_f1": 0.975508853981919,
+        "classification_report": {
+          "business": {
+            "precision": 0.9858156028368794,
+            "recall": 0.9391891891891891,
+            "f1-score": 0.9619377162629758,
+            "support": 148.0
+          },
+          "politics": {
+            "precision": 0.9583333333333334,
+            "recall": 0.9757575757575757,
+            "f1-score": 0.9669669669669669,
+            "support": 165.0
+          },
+          "sports": {
+            "precision": 0.9952550415183867,
+            "recall": 1.0,
+            "f1-score": 0.9976218787158145,
+            "support": 839.0
+          },
+          "accuracy": 0.9887152777777778,
+          "macro avg": {
+            "precision": 0.9798013258961998,
+            "recall": 0.9716489216489217,
+            "f1-score": 0.975508853981919,
+            "support": 1152.0
+          },
+          "weighted avg": {
+            "precision": 0.988754070359188,
+            "recall": 0.9887152777777778,
+            "f1-score": 0.9886467776033319,
+            "support": 1152.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            139,
+            7,
+            2
+          ],
+          [
+            2,
+            161,
+            2
+          ],
+          [
+            0,
+            0,
+            839
+          ]
+        ]
+      }
+    }
+  }
+}
