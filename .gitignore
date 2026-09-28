@@ -1,0 +1,6 @@
+# 忽略本地环境、缓存和系统文件。
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.pytest_cache/
