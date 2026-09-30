@@ -8,3 +8,7 @@ threadpoolctl==3.6.0
 gensim==4.3.3
 smart-open==7.3.0.post1
 wrapt==1.17.3
+# BERT 微调所需的深度学习及模型读取依赖。
+torch==2.8.0
+transformers==4.55.4
+safetensors==0.6.2
